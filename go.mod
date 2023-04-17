@@ -24,12 +24,13 @@ require (
 	github.com/GoogleCloudPlatform/spark-on-k8s-operator v0.0.0-20201215015655-2e8b733f5ad0
 	github.com/apache/yunikorn-core v0.0.0-20230328135225-5a92a28c8aab
 	github.com/apache/yunikorn-scheduler-interface v0.0.0-20230328133840-b29b20a234e0
-	github.com/google/uuid v1.2.0
+	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0
 	github.com/looplab/fsm v1.0.1
 	github.com/onsi/ginkgo/v2 v2.9.0
 	github.com/onsi/gomega v1.27.1
 	go.uber.org/zap v1.24.0
+	gopkg.in/DataDog/dd-trace-go.v1 v1.49.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	gotest.tools/v3 v3.0.3
 	k8s.io/api v0.23.14

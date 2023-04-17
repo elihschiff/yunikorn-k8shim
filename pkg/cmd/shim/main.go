@@ -32,6 +32,7 @@ import (
 	"github.com/apache/yunikorn-k8shim/pkg/log"
 	"github.com/apache/yunikorn-k8shim/pkg/shim"
 	"github.com/apache/yunikorn-scheduler-interface/lib/go/api"
+	"gopkg.in/DataDog/dd-trace-go.v1/profiler"
 )
 
 var (
@@ -40,6 +41,23 @@ var (
 )
 
 func main() {
+	err := profiler.Start(
+		profiler.WithProfileTypes(
+			profiler.CPUProfile,
+			profiler.HeapProfile,
+			// The profiles below are disabled by default to keep overhead
+			// low, but can be enabled as needed.
+
+			profiler.BlockProfile,
+			profiler.MutexProfile,
+			profiler.GoroutineProfile,
+		),
+	)
+	if err != nil {
+		log.Logger().Fatal(err)
+	}
+	defer profiler.Stop()
+
 	conf.BuildVersion = version
 	conf.BuildDate = date
 	conf.IsPluginVersion = false
@@ -60,7 +78,7 @@ func main() {
 	serviceContext := entrypoint.StartAllServicesWithLogger(log.Logger(), log.GetZapConfigs())
 
 	if sa, ok := serviceContext.RMProxy.(api.SchedulerAPI); ok {
-		ss := shim.NewShimScheduler(sa, conf.GetSchedulerConf(), configMaps)
+		ss := shim.NewShimScheduler(sa, conf.GetSchedulerConf())
 		ss.Run()
 
 		signalChan := make(chan os.Signal, 1)
