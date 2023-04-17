@@ -54,7 +54,7 @@ func main() {
 		),
 	)
 	if err != nil {
-		log.Logger().Fatal(err)
+		log.Logger().Fatal("Datadog go profiler error", zap.Error(err))
 	}
 	defer profiler.Stop()
 
