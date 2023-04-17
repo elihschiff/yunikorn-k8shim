@@ -30,7 +30,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.9.0
 	github.com/onsi/gomega v1.27.1
 	go.uber.org/zap v1.24.0
-	gopkg.in/DataDog/dd-trace-go.v1 v1.49.1 // indirect
+	gopkg.in/DataDog/dd-trace-go.v1 v1.49.1
 	gopkg.in/yaml.v2 v2.4.0
 	gotest.tools/v3 v3.0.3
 	k8s.io/api v0.23.14
