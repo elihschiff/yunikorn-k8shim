@@ -139,8 +139,6 @@ github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHG
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/antlr/antlr4/runtime/Go/antlr v0.0.0-20210826220005-b48c857c3a0e/go.mod h1:F7bn7fEU90QkQ3tnmaTx3LTKLEDqnwWODIYppRQ5hnY=
 github.com/apache/thrift v0.12.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb+bacwQ=
-github.com/apache/yunikorn-core v0.0.0-20230328135225-5a92a28c8aab h1:JazafoFlWM/ac8I7A8SMl7XQKrn+iz43CRXhDXzLxfE=
-github.com/apache/yunikorn-core v0.0.0-20230328135225-5a92a28c8aab/go.mod h1:7xCd99ibnRzFhWrRIpA6vahL3xVRvr/wDxPAyzu7LII=
 github.com/apache/yunikorn-scheduler-interface v0.0.0-20230328133840-b29b20a234e0 h1:wWX2x6+RilmtpocvhzKqbNOVvonxZ2601usr97ssyL8=
 github.com/apache/yunikorn-scheduler-interface v0.0.0-20230328133840-b29b20a234e0/go.mod h1:Zg1DzM7vxq0s68CIYKoUR/ZMvt3FXkJrLhn0N6ECP3I=
 github.com/arbovm/levenshtein v0.0.0-20160628152529-48b4e1c0c4d0/go.mod h1:t2tdKJDJF9BV14lnkjHmOQgcvEKgtqs5a1N3LNdJhGE=
@@ -320,6 +318,8 @@ github.com/elazarl/goproxy v0.0.0-20180725130230-947c36da3153/go.mod h1:/Zj4wYkg
 github.com/elazarl/goproxy v0.0.0-20200421181703-e76ad31c14f6 h1:GhNw/V+7mWhxPyD/n7STfwp/MJJ+Z/sa6wmzYXr96Ls=
 github.com/elazarl/goproxy v0.0.0-20200421181703-e76ad31c14f6/go.mod h1:Ro8st/ElPeALwNFlcTpWmkr6IoMFfkjXAvTHpevnDsM=
 github.com/elazarl/goproxy/ext v0.0.0-20190711103511-473e67f1d7d2/go.mod h1:gNh8nYJoAm43RfaxurUnxr+N1PwuFV3ZMl/efxlIlY8=
+github.com/elihschiff/yunikorn-core v0.0.0-20230418193919-f6258e328086 h1:oRkfwUBrU53XKSKuZQfbuuT+oPzYxxk3CDDfrmlBHy4=
+github.com/elihschiff/yunikorn-core v0.0.0-20230418193919-f6258e328086/go.mod h1:7xCd99ibnRzFhWrRIpA6vahL3xVRvr/wDxPAyzu7LII=
 github.com/emicklei/go-restful v0.0.0-20170410110728-ff4f55a20633/go.mod h1:otzb+WCGbkyDHkqmQmT5YD2WR4BBwUdeQoFo8l/7tVs=
 github.com/emicklei/go-restful v2.9.5+incompatible h1:spTtZBk5DYEvbxMVutUuTyh1Ao2r4iyvLdACqsl/Ljk=
 github.com/emicklei/go-restful v2.9.5+incompatible/go.mod h1:otzb+WCGbkyDHkqmQmT5YD2WR4BBwUdeQoFo8l/7tVs=
